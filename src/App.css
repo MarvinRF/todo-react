@@ -3,7 +3,7 @@ body {
   background-color: #f4f4f4;
   padding: 30px;
   color: #333;
-  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/008/854/270/original/abstract-colorful-gradient-animation-background-free-video.jpg);
+  background-image: linear-gradient(to right bottom, #150867, #1f0d67, #261167, #2c1668, #321a68, #341a66, #351965, #371963, #36135f, #340d5a, #330656, #310051);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat
@@ -15,6 +15,7 @@ body {
   background-color: #efefef;
   padding: 20px 30px;
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 h1 {
@@ -34,7 +35,7 @@ input {
 }
 
 button {
-  background-color: #333974;
+  background-color: #ff643c;
   color: #fff;
   padding: 5px 10px;
   margin-right: 10px;
@@ -53,11 +54,16 @@ button:hover {
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #555;
+  font-weight: bold;
+}
+p.category{
+color: #7a7a7a;
+font-weight: 100;
 }
 
 .todo {
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -102,4 +108,14 @@ select {
 
 .filter-options div {
   flex: 1 1 0;
+}
+
+
+@media (max-width: 768px){
+  .filter-options{
+    display: block;
+  }
+  .todo-list{
+    font-size: 13px;
+  }
 }

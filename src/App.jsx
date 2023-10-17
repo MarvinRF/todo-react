@@ -11,19 +11,25 @@ function App() {
   const [todos, setTodos] = useState([
     {
       id: 1,
-      text: 'Criar funcionalidade x no sistema',
+      text: 'Relatorio',
       category: 'Trabalho',
       isCompleted: false,
     },
     {
       id: 2,
-      text: 'Treinar',
+      text: 'Gym',
       category: 'Pessoal',
       isCompleted: false,
     },
     {
       id: 3,
-      text: 'Estudar React',
+      text: 'Estudar',
+      category: 'Estudos',
+      isCompleted: false,
+    },
+    {
+      id: 4,
+      text: 'Ler',
       category: 'Estudos',
       isCompleted: false,
     },
@@ -65,7 +71,7 @@ function App() {
 
   return (
     <div className='app'>
-      <h1>Lista De Tarefas</h1>
+      <h1>To-Do List 📄</h1>
       <Search search={search} setSearch={setSearch} />
       <Filter filter={filter} setFilter={setFilter} setSort={setSort} />
       <div className='todo-list'>
